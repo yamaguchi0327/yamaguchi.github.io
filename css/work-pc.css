@@ -31,8 +31,31 @@ nav > ul > li{
     display: inline-block;
     font-weight: 600;
     letter-spacing: .16em;
-    padding-left: 2vw;
+    margin-left: 2vw;
+    position: relative;
+    -webkit-transition: .3s;
+	transition: .3s;
 }
+
+/* ホバーアニメーション */
+nav > ul > li::after{
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+}
+
+nav > ul > li:hover::after{
+    transform: scale(1, 1);
+}
+
+/* ここまでホバーアニメーション */
 
 a , a:visited{
     text-decoration: none;
@@ -115,7 +138,7 @@ dd{
     margin: 0;
 }
 
-.flow02 > .left{
+.flow02  .left{
     margin: 0 3vw;
     width: 20vw;
 }
@@ -124,7 +147,7 @@ dd{
     display: flex;
 }
 
-.flow02 > .right > img{
+.flow02 > .right img{
     width: 25vw;
     height: 25vh;
     box-shadow:0 0 0.5vw rgb(222,220,222)

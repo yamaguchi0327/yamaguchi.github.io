@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 
 <link rel="stylesheet" href="css/work-pc.css">
+<!-- aos.CSS読み込み -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -23,7 +25,7 @@
 
     <section class = "work-wrap">
         <div class = "title">
-            <div data-aos="fade-up" data-aos-delay = 2000>
+            <div data-aos="fade-up">
                 <h2>works</h2>
             </div>
         </div>
@@ -40,7 +42,7 @@
 
         <section class = "flow01">
             <section class = "summary">
-                <div data-aos="fade-up">
+                <div data-aos="fade-up" data-aos-delay = 2000>
                     <dt>制作期間</dt>
                     <dd>2019.7-2019.8</dd>
                     <dt>担当</dt>
@@ -52,21 +54,27 @@
                 </div>
             </section>
             <div class = "background">
-                <p class = "background-title">制作背景</p>
-                <p>
-                このポートフォリオサイトを作るにあたって重要視したことは、見やすさと操作数の少なさです。ハンバーガーメニューではなく、メニューバーをページ上部に固定してあるので操作数を減らしています。また、メインカラーを彩度が低めな薄いラベンダーカラーにすることで作品を目立たせています。
-                </p>
+                <div data-aos="fade-up" data-aos-delay = 2000>
+                    <p class = "background-title">制作背景</p>
+                    <p>
+                    このポートフォリオサイトを作るにあたって重要視したことは、見やすさと操作数の少なさです。ハンバーガーメニューではなく、メニューバーをページ上部に固定してあるので操作数を減らしています。また、メインカラーを彩度が低めな薄いラベンダーカラーにすることで作品を目立たせています。
+                    </p>
+                </div>
             </div>
         </section>
 
         <section class = "flow02">
-            <div class = "left">
-                <p>
-                    また、芸術工学部で毎年行われる卓展で今年はweb制作卓に入っており、その作品としても制作中です。卓のテーマがアニメーションを使用したwebサイトなので、今後アニメーションを追加していく予定です。また、スマートフォンでも見れるようにレスポンシブデザインにしていきたいです。
-                </p>
+            <div data-aos="fade-up">
+                <div class = "left">
+                    <p>
+                        また、芸術工学部で毎年行われる卓展で今年はweb制作卓に入っており、その作品としても制作中です。卓のテーマがアニメーションを使用したwebサイトなので、今後アニメーションを追加していく予定です。また、スマートフォンでも見れるようにレスポンシブデザインにしていきたいです。
+                    </p>
+                </div>
             </div>
             <div class = "right">
-                <img src = "images/port2.png" alt = "">
+                <div data-aos="fade-up">
+                    <img src = "images/port2.png" alt = "">
+                </div>
             </div>
         </section>
 
@@ -74,6 +82,21 @@
 
     <footer></footer>
 
+    <!-- aos.js読み込み -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 初期化する -->
+    <script>
+        
+        AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 2000,
+            easing: 'ease',
+            once: false,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
     
 </body>
 </html>
