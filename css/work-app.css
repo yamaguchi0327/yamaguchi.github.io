@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    font-family: 'Karla', 'Source Sans Pro','NotoSansCJKjp', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+}
+
+p{
+    font-size: 0.8em;
+    line-height: 2.5vh;
+}
+
+header > img{
+    position: fixed;
+    top: 2vh;
+    left: 5vw;
+    width: 9vw;
+    z-index: 99;
+}
+
+header > nav{
+    position: fixed;
+    top: 2vh;
+    right: 5vw;
+    z-index: 9;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav > ul > li{
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: .16em;
+    padding-left: 2vw;
+}
+
+a , a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+
+.work-wrap{
+    text-align: center;
+    width: 60vw;
+    margin: auto;
+}
+
+h2{
+    padding: 9vh 0 2vh 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+}
+
+.title h2::after{
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    margin: 10px 0 0 -15px;
+    border-bottom: 2px solid #000;
+    content: "";
+}
+
+.main-view{
+    display: flex;
+    margin-top: 6vh;
+    text-align: left;
+    padding: 0 8vw;
+}
+
+.main-view > img{
+    width: 15vw;
+    display: flex;
+    margin: 0 0 0 2vw;
+}
+
+.main-right{
+    margin: 2vh 2vw 2vh 5vw;
+}
+
+.main-right > img{
+    margin-top: 2vh;
+    width: 6vw;
+}
+
+.work-title{
+    font-weight: 600;
+    letter-spacing: .16em;
+}
+
+.flow01 , .flow02 , .flow03{
+    display: flex;
+    padding-top: 7vh;
+    text-align: left;
+}
+
+.summary{
+    margin: 0 4vw;
+}
+
+dt{
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+dd{
+    font-size: 0.7vw;
+    margin: 0;
+    padding: 0.3vh 0;
+}
+
+.background{
+    width: 45vh;
+    margin: 0 4vw 0 2vw;
+}
+
+.background-title{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.flow02  .left{
+    margin: 0 4vw;
+    width: 30vw;
+}
+
+.flow02  .right{
+    display: flex;
+}
+
+.flow02 .right > img{
+    width: 12vw;
+}
+
+.right-right > img{
+    width: 10vw;
+    margin: 0 1vw;
+}
+
+.flow03  img{
+    padding: 3vh 2vw;
+    width: 20vw;
+    height: 17vh;
+    margin: 0 2vw  0 3vw;
+}
+
+.flow03 > .right{
+    margin-top: 3vh;
+    width: 20vw;
+}
+
+
+
+footer{
+    background-color: rgb(234,224,237);
+    width: 100vw;
+    height: 7vh;
+    margin-top: 10vh;
+}
