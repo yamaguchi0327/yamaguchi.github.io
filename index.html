@@ -10,49 +10,30 @@
 <!-- aos.CSS読み込み -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- jQuery.jsの読み込み -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 
 
-<!-- スムーズスクロール部分の記述 -->
-<script>
+    <!-- スムーズスクロール部分の記述 -->
+    <script>
 
-    $(function(){
+        $(function(){
 
-        // #で始まるアンカーをクリックした場合に処理
-        $('a[href^=#]').click(function() {
-            // スクロールの速度
-            var speed = 400; // ミリ秒
-            // アンカーの値取得
-            var href= $(this).attr("href");
-            // 移動先を取得
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            // 移動先を数値で取得
-            var position = target.offset().top;
-            // スムーススクロール
-            $('body,html').animate({scrollTop:position}, speed, 'swing');
-            return false;
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function() {
+                // スクロールの速度
+                var speed = 400; // ミリ秒
+                // アンカーの値取得
+                var href= $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top;
+                // スムーススクロール
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
+            });
         });
-    });
-
-    // $(function(){
-
-    //     $(".page-wrap").css("display", "none");
-    //     setTimeout(function(){
-    //     $('.first-anim').fadeOut();
-    //     },3800);//約4秒数後
-
-    // });
-
-    // $(function(){
-    //     $(".page-wrap").css({opacity:'0'});
-    //     setTimeout(function(){
-    //     $(".page-wrap").css("display", "block");
-    //     $(".page-wrap").stop().animate({opacity:'1'},1000);//1秒かけてコンテンツを表示
-    //     },3800);//約4秒後に
-    // });
-
-    
 
 </script>
 
@@ -190,14 +171,14 @@
         <div id = "works">
             <section class = "work-wrap">
                 <div class = "title">
-                    <div data-aos="fade-up" data-aos-delay = 3000>
+                    <div data-aos="fade-up">
                         <h2>works</h2>
                     </div>
                 </div>
                 <section class = "works-list">
                     
                     <section class = "work">
-                        <div data-aos="fade-up" data-aos-delay = 3000>
+                        <div data-aos="fade-up">
                             <span class = "line01">
                                 <p class = "num">01</p>
                                 <p class = "type">デザイン</p>
@@ -208,7 +189,7 @@
                     </section>
                     
                     <section class = "work">
-                            <div data-aos="fade-up" data-aos-delay = 3000>
+                            <div data-aos="fade-up">
                                 <span class = "line01">
                                     <p class = "num">02</p>
                                     <p class = "type">デザイン/コーディング</p>
@@ -218,7 +199,7 @@
                             </div>
                     </section>
                     <section class = "work">
-                        <div data-aos="fade-up" data-aos-delay = 3000>
+                        <div data-aos="fade-up">
                             <span class = "line01">
                                     <p class = "num">03</p>
                                     <p class = "type">デザイン/コーディング</p>
